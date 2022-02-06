@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
+.backgroundCenterContain {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.siteBackground {
+  @apply bg-ella-reg bg-cover overflow-y-auto no-scrollbar w-screen h-screen justify-center items-center;
+}
+
+.wrapper {
+  @apply h-full w-11/12 pt-4 px-4;
+  @media (min-width: theme('screens.xxxxs')) {
+    @apply w-11/12;
+  }
+  @media (min-width: theme('screens.xxxs')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.xxs')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.xs')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.sm')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.md')) {
+    @apply w-9/12;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply w-9/12;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply w-8/12;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply w-8/12;
+  }
+}
+
+.card {
+  @apply bg-white bg-center bg-contain text-center justify-start h-full no-scrollbar overflow-y-auto rounded-3xl;
+  @media (min-width: theme('screens.xxxxs')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.xxxs')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.xxs')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.xs')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.sm')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.md')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply px-7 py-4;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply px-7 py-4;
+  }
+}
+
+.tabList {
+  @apply list-none space-x-2 text-pink-300 border-b-2 border-pink-300;
+  @media (min-width: theme('screens.xxxxs')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.xxxs')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.xxs')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.xs')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.sm')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.md')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply py-4;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply py-4;
+  }
+}
+
+.imageLinkList {
+  @apply h-full justify-around;
+  @media (min-width: theme('screens.xxxxs')) {
+    @apply justify-around;
+  }
+  @media (min-width: theme('screens.xxxs')) {
+    @apply justify-start;
+  }
+  @media (min-width: theme('screens.xxs')) {
+    @apply justify-start;
+  }
+  @media (min-width: theme('screens.xs')) {
+    @apply justify-around;
+  }
+  @media (min-width: theme('screens.sm')) {
+    @apply justify-around;
+  }
+  @media (min-width: theme('screens.md')) {
+    @apply justify-around;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply justify-around;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply justify-around;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply justify-around;
+  }
+}
+
+.imageLink {
+  @apply self-center w-11/12;
+  @media (min-width: theme('screens.xxxxs')) {
+    @apply w-11/12 pt-4;
+  }
+  @media (min-width: theme('screens.xxxs')) {
+    @apply w-11/12 pt-4;
+  }
+  @media (min-width: theme('screens.xxs')) {
+    @apply w-11/12 pt-6;
+  }
+  @media (min-width: theme('screens.xs')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.sm')) {
+    @apply w-9/12;
+  }
+  @media (min-width: theme('screens.md')) {
+    @apply w-9/12;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply w-8/12;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply w-7/12;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply w-6/12;
+  }
+}
+
+.imageLinkItem {
+  @apply object-fill w-full rounded-imageLink;
+}
+
+.titleCardItem {
+  @apply object-scale-down w-full;
+}
+
+/*
+xxxxs 283px	@media (min-width: 283px) { ... }
+xxxs  374px	@media (min-width: 374px) { ... }
+xxs   389px	@media (min-width: 389px) { ... }
+xs    475px	@media (min-width: 475px) { ... }
+sm	  640px	@media (min-width: 640px) { ... }
+md	  768px	@media (min-width: 768px) { ... }
+lg	 1024px	@media (min-width: 1024px) { ... }
+xl	 1280px	@media (min-width: 1280px) { ... }
+2xl	 1536px	@media (min-width: 1536px) { ... }
+*/
