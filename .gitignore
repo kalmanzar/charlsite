@@ -91,3 +91,6 @@ sw.*
 
 # assets
 static/
+
+# Local Netlify folder
+.netlify

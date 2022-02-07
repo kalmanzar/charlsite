@@ -16,6 +16,19 @@
   }
 }
 
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: thin dotted !important;
+}
+
 .backgroundCenterContain {
   background-position: center;
   background-size: contain;
@@ -153,13 +166,13 @@
 .imageLink {
   @apply self-center w-11/12;
   @media (min-width: theme('screens.xxxxs')) {
-    @apply w-11/12 pt-4;
+    @apply w-11/12 mt-4;
   }
   @media (min-width: theme('screens.xxxs')) {
-    @apply w-11/12 pt-4;
+    @apply w-11/12 mt-4;
   }
   @media (min-width: theme('screens.xxs')) {
-    @apply w-11/12 pt-6;
+    @apply w-11/12 mt-6;
   }
   @media (min-width: theme('screens.xs')) {
     @apply w-10/12;
