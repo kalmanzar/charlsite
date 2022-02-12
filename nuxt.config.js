@@ -16,7 +16,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/faviconInitialsFull.ico' }
     ]
   },
 
@@ -37,6 +37,9 @@ export default {
           colors: {
             'off-white': '#e6e0c8'
           },
+          fontFamily: {
+            mondayRush: ['MondayRush'],
+          },
           spacing: {
             '112': '28rem',
             '128': '32rem',
@@ -56,6 +59,7 @@ export default {
             '15/24': '62.5%',
           },
           backgroundImage: theme => ({
+            'wallpupper': "url('/wallpupper.png')",
             'ella-reg': "url('/ellaBackground.png')",
             'ella': "url('/ellaBackgroundEmptyCenter.png')",
             'ella-tablet': "url('/ellaBackgroundEmptyCenterTablet.png')",

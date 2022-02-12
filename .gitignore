@@ -90,7 +90,8 @@ sw.*
 *.swp
 
 # assets
-static/
+static/*
+assets/fonts/*
 
 # Local Netlify folder
 .netlify

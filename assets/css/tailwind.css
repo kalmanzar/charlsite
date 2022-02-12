@@ -16,6 +16,12 @@
   }
 }
 
+@font-face {
+  font-family: 'MondayRush';
+  font-weight: 400;
+  src: url('../fonts/MondayRush-Regular.otf') format('opentype');
+}
+
 .noSelect {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -29,18 +35,19 @@
   outline: thin dotted !important;
 }
 
-.backgroundCenterContain {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+p::selection {
+  background: rgb(249 168 212);
+}
+p::-moz-selection {
+  background: rgb(249 168 212);
 }
 
 .siteBackground {
-  @apply bg-ella-reg bg-cover overflow-y-auto no-scrollbar w-screen h-screen justify-center items-center;
+  @apply bg-wallpupper bg-cover overflow-y-auto no-scrollbar w-screen h-screen justify-center items-center;
 }
 
 .wrapper {
-  @apply h-full w-11/12 pt-4 px-4;
+  @apply h-full w-11/12 py-4 px-4;
   @media (min-width: theme('screens.xxxxs')) {
     @apply w-11/12;
   }
@@ -102,7 +109,7 @@
 }
 
 .tabList {
-  @apply list-none space-x-2 text-pink-300 border-b-2 border-pink-300;
+  @apply list-none space-x-2 text-xl text-pink-300 border-b-2 border-pink-300;
   @media (min-width: theme('screens.xxxxs')) {
     @apply py-4;
   }
@@ -116,19 +123,19 @@
     @apply py-4;
   }
   @media (min-width: theme('screens.sm')) {
-    @apply py-4;
+    @apply text-2xl py-4;
   }
   @media (min-width: theme('screens.md')) {
-    @apply py-4;
+    @apply text-2xl py-4;
   }
   @media (min-width: theme('screens.lg')) {
-    @apply py-4;
+    @apply text-2xl py-4;
   }
   @media (min-width: theme('screens.xl')) {
-    @apply py-4;
+    @apply text-2xl py-4;
   }
   @media (min-width: theme('screens.2xl')) {
-    @apply py-4;
+    @apply text-2xl py-4;
   }
 }
 
@@ -200,6 +207,10 @@
 
 .titleCardItem {
   @apply object-scale-down w-full;
+}
+
+.socialLinksList {
+  @apply flex justify-center mt-5 pt-2 space-x-1 border-t-2 border-pink-300
 }
 
 /*
