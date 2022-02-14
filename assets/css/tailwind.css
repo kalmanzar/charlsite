@@ -19,7 +19,8 @@
 @font-face {
   font-family: 'MondayRush';
   font-weight: 400;
-  src: url('../fonts/MondayRush-Regular.otf') format('opentype');
+  font-display: swap;
+  src: url('/MondayRush-Regular.otf') format('opentype');
 }
 
 .noSelect {
@@ -202,11 +203,11 @@ p::-moz-selection {
 }
 
 .imageLinkItem {
-  @apply object-fill w-full rounded-imageLink;
+  @apply object-fill w-full h-full rounded-imageLink;
 }
 
 .titleCardItem {
-  @apply object-scale-down w-full;
+  @apply object-scale-down w-full h-full;
 }
 
 .socialLinksList {

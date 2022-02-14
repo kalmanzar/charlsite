@@ -32,3 +32,8 @@ $ netlify deploy
 # deploy prod site
 $ netlify deploy --prod
 ```
+
+## Webp image conversion
+```bash
+$ ./cwebp.exe -q 80 <src>.png -o <dest>.webp
+```

@@ -16,7 +16,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/faviconInitialsFull.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/faviconInitialsFull.ico' },
+      { rel: 'preload', as: 'font', type: 'font/otf', href: '/MondayRush-Regular.otf', crossorigin: true }
     ]
   },
 
@@ -59,14 +60,13 @@ export default {
             '15/24': '62.5%',
           },
           backgroundImage: theme => ({
-            'wallpupper': "url('/wallpupper.png')",
-            'ella-reg': "url('/ellaBackground.png')",
-            'ella': "url('/ellaBackgroundEmptyCenter.png')",
-            'ella-tablet': "url('/ellaBackgroundEmptyCenterTablet.png')",
-            'ella-mobile': "url('/ellaBackgroundEmptyCenterMobile.png')",
+            'wallpupper': "url('~/assets/images/wallpupper.webp')",
           })
         }
-      }
+      },
+      plugins: [
+        require('@tailwindcss/aspect-ratio'),
+      ],
     }
   },
 
