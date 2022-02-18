@@ -2,7 +2,7 @@
   <div class="flex siteBackground">
     <div class="flex flex-col wrapper">
       <div class="flex flex-1 flex-col card">
-        <nuxt-link to="/" class="flex imageLink noSelect aspect-w-7 aspect-h-3 xs:aspect-w-8 xs:aspect-h-2"><img src="~/assets/images/titleCard.webp" class="titleCardItem" /></nuxt-link>
+        <nuxt-link to="/" class="flex imageLink noSelect"><img src="~/assets/images/titleCardFull.webp" srcset="~/assets/images/titleCard-420.webp 220w, ~/assets/images/titleCard-900.webp 400w, ~/assets/images/titleCardFull.webp 1300w" sizes="(max-width: 420px) 220px, (max-width: 900px) 400px, (min-width: 901) 1300px" class="titleCardItem" /></nuxt-link>
         <ul class="flex flex-row flex-wrap tabList">
           <li class="flex-auto text-center"><nuxt-link to="/story" class="font-mondayRush noSelect">STORY</nuxt-link></li>
           <li class="flex-auto text-center"><nuxt-link to="/comics" class="font-mondayRush noSelect">COMICS</nuxt-link></li>

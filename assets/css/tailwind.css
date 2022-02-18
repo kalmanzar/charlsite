@@ -172,33 +172,33 @@ p::-moz-selection {
 }
 
 .imageLink {
-  @apply self-center w-11/12;
+  @apply aspect-w-7 aspect-h-3 self-center w-11/12;
   @media (min-width: theme('screens.xxxxs')) {
-    @apply w-11/12 mt-4;
+    @apply aspect-w-7 aspect-h-3 w-11/12 mt-4;
   }
   @media (min-width: theme('screens.xxxs')) {
-    @apply w-11/12 mt-4;
+    @apply aspect-w-7 aspect-h-3 w-11/12 mt-4;
   }
   @media (min-width: theme('screens.xxs')) {
-    @apply w-11/12 mt-6;
+    @apply aspect-w-7 aspect-h-3 w-11/12 mt-6;
   }
   @media (min-width: theme('screens.xs')) {
-    @apply w-10/12;
+    @apply aspect-w-8 aspect-h-2 w-10/12;
   }
   @media (min-width: theme('screens.sm')) {
-    @apply w-9/12;
+    @apply aspect-w-7 aspect-h-3 w-9/12;
   }
   @media (min-width: theme('screens.md')) {
-    @apply w-9/12;
+    @apply aspect-w-7 aspect-h-3 w-9/12;
   }
   @media (min-width: theme('screens.lg')) {
-    @apply w-8/12;
+    @apply aspect-w-7 aspect-h-3 w-8/12;
   }
   @media (min-width: theme('screens.xl')) {
-    @apply w-7/12;
+    @apply aspect-w-10 aspect-h-2 w-7/12;
   }
   @media (min-width: theme('screens.2xl')) {
-    @apply w-6/12;
+    @apply aspect-w-10 aspect-h-2 w-6/12;
   }
 }
 
@@ -207,7 +207,7 @@ p::-moz-selection {
 }
 
 .titleCardItem {
-  @apply object-scale-down w-full h-full;
+  @apply object-fill w-full h-full;
 }
 
 .socialLinksList {
