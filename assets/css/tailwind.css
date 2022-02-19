@@ -14,6 +14,9 @@
       scrollbar-width: none;  /* Firefox */
     }
   }
+  .lightbox {
+    background: rgba(0, 0, 0, 0.8);
+  }
 }
 
 @font-face {
@@ -36,10 +39,38 @@
   outline: thin dotted !important;
 }
 
+a::selection {
+  background: rgb(249 168 212);
+}
+a::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+div::selection {
+  background: rgb(249 168 212);
+}
+div::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+img::selection {
+  background: rgb(249 168 212);
+}
+img::-moz-selection {
+  background: rgb(249 168 212);
+}
+
 p::selection {
   background: rgb(249 168 212);
 }
 p::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+svg::selection {
+  background: rgb(249 168 212);
+}
+svg::-moz-selection {
   background: rgb(249 168 212);
 }
 
@@ -247,6 +278,10 @@ p::-moz-selection {
 
 .imageGalleryItem {
   @apply object-fill w-full h-full rounded-3xl;
+}
+
+.lightbox {
+  @apply top-0 left-0 w-screen h-screen z-50 fixed justify-center;
 }
 
 /*
