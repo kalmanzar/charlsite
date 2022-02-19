@@ -39,6 +39,10 @@
   outline: thin dotted !important;
 }
 
+.pinkSelect {
+  -webkit-tap-highlight-color: rgb(249 168 212);
+}
+
 a::selection {
   background: rgb(249 168 212);
 }
