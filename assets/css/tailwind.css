@@ -79,7 +79,7 @@ p::-moz-selection {
 }
 
 .card {
-  @apply bg-white bg-center bg-contain text-center justify-start h-full no-scrollbar overflow-y-auto rounded-3xl;
+  @apply bg-white bg-center bg-contain text-center justify-start h-full no-scrollbar overflow-y-auto rounded-3xl shadow-2xl;
   @media (min-width: theme('screens.xxxxs')) {
     @apply px-7 py-4;
   }
@@ -211,7 +211,42 @@ p::-moz-selection {
 }
 
 .socialLinksList {
-  @apply flex justify-center mt-5 pt-2 space-x-1 border-t-2 border-pink-300
+  @apply flex justify-center mt-5 pt-2 space-x-1 border-t-2 border-pink-300;
+}
+
+.comicsGalleryList {
+  @apply grid-cols-1 gap-1 pt-5;
+  @media (min-width: theme('screens.xxxxs')) {
+    @apply grid-cols-1 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.xxxs')) {
+    @apply grid-cols-1 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.xxs')) {
+    @apply grid-cols-1 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.xs')) {
+    @apply grid-cols-1 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.sm')) {
+    @apply grid-cols-2 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.md')) {
+    @apply grid-cols-2 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply grid-cols-3 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply grid-cols-3 gap-4 pt-5;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply grid-cols-3 gap-4 pt-5;
+  }
+}
+
+.imageGalleryItem {
+  @apply object-fill w-full h-full rounded-3xl;
 }
 
 /*
