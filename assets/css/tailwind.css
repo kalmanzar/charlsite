@@ -57,6 +57,13 @@ div::-moz-selection {
   background: rgb(249 168 212);
 }
 
+h1::selection {
+  background: rgb(249 168 212);
+}
+h1::-moz-selection {
+  background: rgb(249 168 212);
+}
+
 img::selection {
   background: rgb(249 168 212);
 }
@@ -250,33 +257,33 @@ svg::-moz-selection {
 }
 
 .comicsGalleryList {
-  @apply grid-cols-1 gap-1 pt-5;
+  @apply grid-cols-1 gap-1;
   @media (min-width: theme('screens.xxxxs')) {
-    @apply grid-cols-1 gap-4 pt-5;
+    @apply grid-cols-1 gap-4;
   }
   @media (min-width: theme('screens.xxxs')) {
-    @apply grid-cols-1 gap-4 pt-5;
+    @apply grid-cols-1 gap-4;
   }
   @media (min-width: theme('screens.xxs')) {
-    @apply grid-cols-1 gap-4 pt-5;
+    @apply grid-cols-1 gap-4;
   }
   @media (min-width: theme('screens.xs')) {
-    @apply grid-cols-1 gap-4 pt-5;
+    @apply grid-cols-1 gap-4;
   }
   @media (min-width: theme('screens.sm')) {
-    @apply grid-cols-2 gap-4 pt-5;
+    @apply grid-cols-2 gap-4;
   }
   @media (min-width: theme('screens.md')) {
-    @apply grid-cols-2 gap-4 pt-5;
+    @apply grid-cols-2 gap-4;
   }
   @media (min-width: theme('screens.lg')) {
-    @apply grid-cols-3 gap-4 pt-5;
+    @apply grid-cols-3 gap-4;
   }
   @media (min-width: theme('screens.xl')) {
-    @apply grid-cols-3 gap-4 pt-5;
+    @apply grid-cols-3 gap-4;
   }
   @media (min-width: theme('screens.2xl')) {
-    @apply grid-cols-3 gap-4 pt-5;
+    @apply grid-cols-3 gap-4;
   }
 }
 

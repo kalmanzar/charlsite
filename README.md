@@ -33,7 +33,10 @@ $ netlify deploy
 $ netlify deploy --prod
 ```
 
-## Webp image conversion
+## Image Conversion/Resizing
 ```bash
-$ ./cwebp.exe -q 80 <src>.png -o <dest>.webp
+$ magick convert "$i" -resize WxH "$filename".png
+# B/W or grayscale use the following -define
+$ magick convert "$i" -resize WxH -define png:color-type=6 "$filename".png
+$ cwebp -q 85 "$i" -o "$filename-Full".webp
 ```
