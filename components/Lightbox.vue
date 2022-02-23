@@ -1,9 +1,12 @@
 <template>
   <div class="flex flex-1 w-full h-full">
     <div v-if="!visible" class="grid comicsGalleryList">
-      <a href="#" @click.prevent="show(i)" v-for="(image, i) in images" :key="i">
-        <img :src="image" class="imageGalleryItem" />
+      <a class="pinkSelect" href="#" @click.prevent="show(i)" v-for="(image, i) in images" :key="i">
+        <img class="imageGalleryItem" :src="image" />
       </a>
+      <div v-for="(iframe, i) in iframes" :key="i" class="relative">
+        <iframe v-if="iframes" class="imageGalleryItem z-10" :width="iframe.width" :height="iframe.height" :src="iframe.src" :title="iframe.title" :frameborder="iframe.frameborder" :allow="iframe.allow"></iframe>
+      </div>
     </div>
     <div class="flex lightbox" v-if="visible" @click="hide">
       <div class="flex flex-row my-24 xxxxs:my-24 xxxs:my-20 xxs:my-28 xs:my-20 sm:my-20 md:my-20 lg:my-8">
@@ -31,7 +34,11 @@ export default {
     images: {
       type: Array,
       required: true
-    }
+    },
+    iframes: {
+      type: Array,
+      required: false
+    },
   },
   data() {
     return {
