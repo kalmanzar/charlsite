@@ -18,9 +18,9 @@
       <h1 class="py-4 font-mondayRush text-2xl">RUTA</h1>
       <Lightbox class="pb-4 border-b-2 border-pink-300" :images="rutaImages" />
       <h1 class="py-4 font-mondayRush text-2xl">CUTTING</h1>
-      <Lightbox class="pb-2" :images="cuttingImages" />
-      <!-- <h1 class="py-4 font-mondayRush text-2xl">PUBES</h1>
-      <Lightbox class="pb-4" :images="pubesImages" /> -->
+      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="cuttingImages" />
+      <h1 class="py-4 font-mondayRush text-2xl">PUBES</h1>
+      <Lightbox class="pb-2" :images="pubesImages" />
     </div>
   </div>
 </template>
@@ -78,6 +78,15 @@ export default {
         require('~/assets/images/comics/bear/bear_5-Full.webp'),
       ]
     },
+    // blueprintsImages() {
+    //   return [
+    //     require('~/assets/images/comics/blueprints/blueprints_1-Full.webp'),
+    //     require('~/assets/images/comics/blueprints/blueprints_2-Full.webp'),
+    //     require('~/assets/images/comics/blueprints/blueprints_3-Full.webp'),
+    //     require('~/assets/images/comics/blueprints/blueprints_4-Full.webp'),
+    //     require('~/assets/images/comics/blueprints/blueprints_5-Full.webp'),
+    //   ]
+    // },
     bodiesImages() {
       return [
         require('~/assets/images/comics/bodies/bodies_1-Full.webp'),
@@ -103,6 +112,11 @@ export default {
         require('~/assets/images/comics/cutting/cutting_3-Full.webp'),
         require('~/assets/images/comics/cutting/cutting_4-Full.webp'),
         require('~/assets/images/comics/cutting/cutting_5-Full.webp'),
+      ]
+    },
+    pubesImages() {
+      return [
+        require('~/assets/images/comics/pubes/pubes_1-Full.webp'),
       ]
     },
   }
