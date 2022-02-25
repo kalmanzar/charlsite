@@ -114,7 +114,7 @@ a {
   grid-column: span 2;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   /* Two columns */
   .lightboxGrid {
     display: grid;
