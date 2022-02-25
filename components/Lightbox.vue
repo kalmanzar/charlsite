@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-1 w-full h-full">
-    <div v-if="!visible" class="grid comicsGalleryList">
-      <a class="pinkSelect" href="#" @click.prevent="show(i)" v-for="(image, i) in images" :key="i">
+    <div v-if="!visible" class="lightboxGrid">
+      <a class="pinkSelect" href="#" @click.prevent="show(i)" v-for="(image, i) in images" :key="image">
         <img class="imageGalleryItem" :src="image" />
       </a>
-      <div v-for="(iframe, i) in iframes" :key="i" class="relative">
+      <a class="relative" v-for="(iframe, j) in iframes" :key="j">
         <iframe v-if="iframes" class="imageGalleryItem z-10" :width="iframe.width" :height="iframe.height" :src="iframe.src" :title="iframe.title" :frameborder="iframe.frameborder" :allow="iframe.allow"></iframe>
-      </div>
+      </a>
     </div>
     <div class="flex lightbox" v-if="visible" @click="hide">
       <div class="flex flex-row my-24 xxxxs:my-24 xxxs:my-20 xxs:my-28 xs:my-20 sm:my-20 md:my-20 lg:my-8">
@@ -100,3 +100,56 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.lightbox {
+  background: rgba(0, 0, 0, 0.8);
+}
+.lightboxGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+a {
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 640px) {
+  /* Two columns */
+  .lightboxGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+  }
+  a {
+    grid-column: span 2;
+  }
+  /* Dealing with single orphan */
+  a:last-child:nth-child(2n - 1) {
+    grid-column-end: 4;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Three columns */
+  .lightboxGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px;
+  }
+  a {
+    grid-column: span 2;
+  }
+  /* Dealing with 2 orphan items */
+  a:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+  a:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+  /* Dealing with single orphan */
+  a:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
+</style>

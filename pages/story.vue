@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <div>
       <h1 class="py-4 font-mondayRush text-2xl">WHEN YOUR PRIVATE JET CRASHES</h1>
       <Lightbox class="pb-4 border-b-2 border-pink-300" :images="planeImages" :iframes="planeIframes" />

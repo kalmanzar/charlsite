@@ -14,9 +14,6 @@
       scrollbar-width: none;  /* Firefox */
     }
   }
-  .lightbox {
-    background: rgba(0, 0, 0, 0.8);
-  }
 }
 
 @font-face {
@@ -240,7 +237,7 @@ svg::-moz-selection {
     @apply aspect-w-10 aspect-h-2 w-7/12;
   }
   @media (min-width: theme('screens.2xl')) {
-    @apply aspect-w-10 aspect-h-2 w-6/12;
+    @apply aspect-w-10 aspect-h-2 w-7/12;
   }
 }
 

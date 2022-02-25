@@ -92,7 +92,12 @@ sw.*
 # assets
 static/*
 assets/fonts/*
-assets/images/*
+assets/images/about/*
+assets/images/comics/*
+assets/images/digital/*
+assets/images/story/*
+assets/images/traditional/*
+assets/images/*.webp
 
 # Local Netlify folder
 .netlify
