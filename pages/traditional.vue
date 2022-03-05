@@ -2,19 +2,19 @@
   <div class="w-full">
     <div>
       <h1 class="py-4 font-mondayRush text-2xl">HOGLET</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="hogletImages" />
+      <Lightbox class="pb-4" :images="hogletImages" />
       <h1 class="py-4 font-mondayRush text-2xl">MATE</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="mateImages" />
+      <Lightbox class="pb-4" :images="mateImages" />
       <h1 class="py-4 font-mondayRush text-2xl">BAUGHMAN CENTER</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="baughmanImages" />
+      <Lightbox class="pb-4" :images="baughmanImages" />
       <h1 class="py-4 font-mondayRush text-2xl">JACK AT THE HOUSE</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="jackImages" />
+      <Lightbox class="pb-4" :images="jackImages" />
       <h1 class="py-4 font-mondayRush text-2xl">RICK</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="rickImages" />
+      <Lightbox class="pb-4" :images="rickImages" />
       <h1 class="py-4 font-mondayRush text-2xl">ROBIN</h1>
       <Lightbox class="pb-2" :images="robinImages" />
-      <!-- <h1 class="py-4 font-mondayRush text-2xl">FIGURE DRAWINGS AND GENERAL STUDIES</h1>
-      <Lightbox class="pb-2" :images="figureImages" /> -->
+      <h1 class="py-4 font-mondayRush text-2xl">FIGURE DRAWINGS AND GENERAL STUDIES</h1>
+      <Lightbox class="pb-2" :images="figureImages" />
     </div>
   </div>
 </template>
@@ -67,12 +67,29 @@ export default {
         require('~/assets/images/traditional/robin/robinPainting-Full.webp'),
       ]
     },
-    // figureImages() {
-    //   return [
-    //     require('~/assets/images/traditional/figures/gatorBW-Full.webp'),
-    //     require('~/assets/images/traditional/figures/gatorColor-Full.webp'),
-    //   ]
-    // },
+    figureImages() {
+      return [
+        require('~/assets/images/traditional/figures/figure_1-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_2-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_3-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_4-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_5-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_6-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_7-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_8-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_9-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_10-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_11-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_12-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_13-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_14-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_15-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_16-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_17-Full.webp'),
+        // require('~/assets/images/traditional/figures/figure_18-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_19-Full.webp'),
+      ]
+    },
   }
 }
 </script>

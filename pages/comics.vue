@@ -1,25 +1,38 @@
 <template>
   <div class="w-full">
     <div>
-      <h1 class="py-4 font-mondayRush text-2xl">CORNSPIKE</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="cornspikeImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">NEST</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="nestImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">SEGMENTS</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="segmentsImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">IZUMI</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="izumiImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">BEAR</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="bearImages" />
-      <!-- <h1 class="py-4 font-mondayRush text-2xl">BLUEPRINTS</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="blueprintsImages" /> -->
-      <h1 class="py-4 font-mondayRush text-2xl">BODIES</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="bodiesImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">RUTA</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="rutaImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">CUTTING</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="cuttingImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">PUBES</h1>
+      <h1 class="pt-4 font-mondayRush text-2xl">CORNSPIKE</h1>
+      <p class="pb-4 font-sans italic">2022, ink, watercolor, and Procreate</p>
+      <Lightbox class="pb-4" :images="cornspikeImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">NEST</h1>
+      <p class="pb-4 font-sans italic">2021, ink, watercolor, and Procreate</p>
+      <Lightbox class="pb-4" :images="nestImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">SEGMENTS</h1>
+      <p class="pb-4 font-sans italic">2021, pencil, ink, and watercolor</p>
+      <Lightbox class="pb-4" :images="segmentsImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">FAMILY BUSINESS</h1>
+      <p class="pb-4 font-sans italic">2020, pencil and ink</p>
+      <Lightbox class="pb-4" :images="familyImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">IZUMI</h1>
+      <p class="pb-4 font-sans italic">2020, pencil and ink</p>
+      <Lightbox class="pb-4" :images="izumiImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">BEAR</h1>
+      <p class="pb-4 font-sans italic">2020, pencil, ink, and watercolor</p>
+      <Lightbox class="pb-4" :images="bearImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">BLUEPRINTS</h1>
+      <p class="pb-4 font-sans italic">2020, Adobe Illustrator</p>
+      <Lightbox class="pb-4" :images="blueprintsImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">BODIES</h1>
+      <p class="pb-4 font-sans italic">2019, pencil and ink</p>
+      <Lightbox class="pb-4" :images="bodiesImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">RUTA</h1>
+      <p class="pb-4 font-sans italic">2019, pencil and ink</p>
+      <Lightbox class="pb-4" :images="rutaImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">CUTTING</h1>
+      <p class="pb-4 font-sans italic">2018, pencil, ink, wash, and screentone</p>
+      <Lightbox class="pb-4" :images="cuttingImages" />
+      <h1 class="pt-4 font-mondayRush text-2xl">PUBES</h1>
+      <p class="pb-4 font-sans italic">2018, pencil, ink, and wash</p>
       <Lightbox class="pb-2" :images="pubesImages" />
     </div>
   </div>
@@ -61,6 +74,15 @@ export default {
         require('~/assets/images/comics/segments/segments_5-Full.webp'),
       ]
     },
+    familyImages() {
+      return [
+        require('~/assets/images/comics/family/family_1-Full.webp'),
+        require('~/assets/images/comics/family/family_2-Full.webp'),
+        require('~/assets/images/comics/family/family_3-Full.webp'),
+        require('~/assets/images/comics/family/family_4-Full.webp'),
+        require('~/assets/images/comics/family/family_5-Full.webp'),
+      ]
+    },
     izumiImages() {
       return [
         require('~/assets/images/comics/izumi/izumi_1-Full.webp'),
@@ -78,15 +100,11 @@ export default {
         require('~/assets/images/comics/bear/bear_5-Full.webp'),
       ]
     },
-    // blueprintsImages() {
-    //   return [
-    //     require('~/assets/images/comics/blueprints/blueprints_1-Full.webp'),
-    //     require('~/assets/images/comics/blueprints/blueprints_2-Full.webp'),
-    //     require('~/assets/images/comics/blueprints/blueprints_3-Full.webp'),
-    //     require('~/assets/images/comics/blueprints/blueprints_4-Full.webp'),
-    //     require('~/assets/images/comics/blueprints/blueprints_5-Full.webp'),
-    //   ]
-    // },
+    blueprintsImages() {
+      return [
+        require('~/assets/images/comics/blueprints/blueprints_1-Full.webp'),
+      ]
+    },
     bodiesImages() {
       return [
         require('~/assets/images/comics/bodies/bodies_1-Full.webp'),

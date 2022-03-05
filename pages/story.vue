@@ -2,9 +2,9 @@
   <div class="w-full">
     <div>
       <h1 class="py-4 font-mondayRush text-2xl">WHEN YOUR PRIVATE JET CRASHES</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="planeImages" :iframes="planeIframes" />
+      <Lightbox class="pb-4" :images="planeImages" :iframes="planeIframes" />
       <h1 class="py-4 font-mondayRush text-2xl">CHARACTER STUDIES</h1>
-      <Lightbox class="pb-4 border-b-2 border-pink-300" :images="characterImages" />
+      <Lightbox class="pb-4" :images="characterImages" />
       <h1 class="py-4 font-mondayRush text-2xl">STORYBOARDS</h1>
       <Lightbox class="pb-2" :images="storyBoardImages" />
     </div>
