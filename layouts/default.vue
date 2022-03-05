@@ -9,6 +9,7 @@
           <li class="flex-auto text-center"><nuxt-link to="/digital" class="font-mondayRush noSelect">DIGITAL</nuxt-link></li>
           <li class="flex-auto text-center"><nuxt-link to="/traditional" class="font-mondayRush noSelect">TRADITIONAL</nuxt-link></li>
           <li class="flex-auto text-center"><nuxt-link to="/about" class="font-mondayRush noSelect">ABOUT</nuxt-link></li>
+          <li class="flex-auto text-center"><nuxt-link to="/resume" class="font-mondayRush noSelect">RESUME</nuxt-link></li>
         </ul>
         <div class="flex flex-1">
           <Nuxt />
