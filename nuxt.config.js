@@ -40,6 +40,11 @@ export default {
           },
           fontFamily: {
             mondayRush: ['MondayRush'],
+            sans: ['Helvetica', 'Arial', 'sans-serif'],
+          },
+          screens: {
+            '3xl': '1600px',
+            '4xl': '2000px',
           },
           spacing: {
             '112': '28rem',
