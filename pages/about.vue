@@ -1,14 +1,35 @@
 <template>
-  <div class="flex flex-col text-justify pt-4">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida quam id felis imperdiet, sed placerat diam efficitur. Curabitur facilisis tellus id sapien feugiat fringilla. Cras magna nisi, faucibus vel aliquet non, mattis nec risus. Etiam fringilla lacinia odio, gravida lacinia dolor aliquet efficitur. Donec iaculis erat sit amet ex semper, sed tempus orci dapibus. Maecenas sit amet metus fermentum, pulvinar ex ut, pellentesque dolor. Integer maximus tempor nunc pulvinar pretium. Suspendisse id congue ipsum. Donec fermentum semper tincidunt. Vivamus porta mollis sapien, eu pharetra purus tempus iaculis. Nulla interdum, nunc congue tempus posuere, est urna fringilla ipsum, ac accumsan magna ipsum vitae felis. Aenean semper pulvinar faucibus.</p><br>
-
-    <p>Sed consequat, ex in mattis mattis, urna erat ornare eros, vitae feugiat massa enim sed nunc. Donec eu sodales diam. Proin sed neque auctor, posuere libero in, facilisis augue. Phasellus ornare posuere enim, eget porttitor nisl commodo sit amet. Cras at nisi et nunc varius pulvinar ut vitae metus. Cras efficitur accumsan ligula. Nunc viverra risus vitae lectus sollicitudin laoreet. Phasellus aliquet, arcu venenatis porttitor sollicitudin, turpis diam tempor ex, sed posuere orci leo id sem.</p><br>
-
-    <p>Maecenas dictum nibh vel leo sodales, ut convallis tortor pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi iaculis ex nec leo tristique feugiat. Mauris faucibus accumsan ex, a tristique dui facilisis quis. Cras nec libero non mi congue viverra vel in massa. Nam faucibus, mi eu porttitor ultricies, ipsum orci pharetra est, vel eleifend metus arcu sit amet nisi. Donec non elit magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus semper malesuada sapien, nec tincidunt ante maximus ac. Quisque sit amet orci nec urna venenatis facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus justo risus, consequat at massa in, interdum laoreet dui. Duis in scelerisque quam, et facilisis lorem.</p><br>
-
-    <p>Maecenas eros quam, suscipit vitae ligula non, consectetur cursus mi. Etiam sit amet luctus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget urna vitae mauris porta pretium. Sed posuere neque at maximus dictum. Sed luctus elementum tempus. Nulla facilisi. Mauris vel metus elementum, efficitur eros tempus, efficitur dui. Ut vulputate ut urna nec vestibulum. Nullam elementum eros vitae velit tempor, ac venenatis mauris cursus. Fusce sed libero velit. Aliquam pharetra faucibus tellus volutpat ultricies.</p><br>
-
-    <p>Etiam est mauris, consectetur a tincidunt ut, faucibus eu dui. Sed maximus egestas enim sed bibendum. Cras sapien diam, molestie ac venenatis eget, iaculis vitae nisl. Nulla ut augue nec dui sagittis aliquet. Nunc et ligula lobortis, tristique justo ut, viverra ex. Proin suscipit feugiat nisi ac pharetra. Curabitur nec sem sit amet nisl fermentum tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc fermentum nisi lorem, eu lacinia mi aliquam et. Quisque efficitur pellentesque blandit.</p><br>
+  <div class="flex w-full justify-center">
+    <div class="flex flex-row w-full">
+      <div class="flex flex-1 flex-col w-160 h-full justify-evenly">
+        <img class="object-fill pt-4 pb-2 rounded-imageLink w-full h-112" src="~/assets/images/about/me-Full.webp" />
+        <div class="">
+          <h1 class="text-3xl font-mondayRush">CURRENT AVAILABILITY:</h1>
+          <p class="font-sans">Available for freelance!</p>
+          <p><a href="mailto:carlyshoo@gmail.com" target="_blank">carlyshoo@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col pl-4 text-justify">
+        <div class="py-4">
+          <h1 class="text-center text-3xl font-mondayRush">ABOUT ME</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida quam id felis imperdiet, sed placerat diam efficitur. Curabitur facilisis tellus id sapien feugiat fringilla. Cras magna nisi, faucibus vel aliquet non, mattis nec risus. Etiam fringilla lacinia odio, gravida lacinia dolor aliquet efficitur. Donec iaculis erat sit amet ex semper, sed tempus orci dapibus. Maecenas sit amet metus fermentum, pulvinar ex ut, pellentesque dolor. Integer maximus tempor nunc pulvinar pretium. Suspendisse id congue ipsum. Donec fermentum semper tincidunt. Vivamus porta mollis sapien, eu pharetra purus tempus iaculis. Nulla interdum, nunc congue tempus posuere, est urna fringilla ipsum, ac accumsan magna ipsum vitae felis. Aenean semper pulvinar faucibus.</p>
+        </div>
+        <div class="pb-4">
+          <h1 class="text-center text-3xl font-mondayRush">REVIEWS</h1>
+          <h2 class="text-xl font-mondayRush">REVIEW OF SEGMENTS:</h2>
+          <p class="pb-2"><a href="https://members.sawcomics.org/posts/segments-and-some-story-structure" target="_blank"><u>https://members.sawcomics.org/posts/segments-and-some-story-structure</u></a></p>
+          <h2 class="text-xl font-mondayRush">REVIEW OF CUTTING:</h2>
+          <p><a href="https://brooklynrail.org/2021/02/art_books/World-War-3-Illustrateds-Shameless-Feminists?ww3illustrated" target="_blank"><u>https://brooklynrail.org/2021/02/art_books/World-War-3-Illustrateds-Shameless-Feminists</u></a></p>
+        </div>
+        <div>
+          <h1 class="text-center text-3xl font-mondayRush">WHERE TO READ</h1>
+          <h2 class="text-xl font-mondayRush">RAINESVILLE ANTHOLOGY:</h2>
+          <p class="pb-2"><a href="https://www.sequentialartistsworkshop.org/shop" target="_blank"><u>https://www.sequentialartistsworkshop.org/shop</u></a></p>
+          <h2 class="text-xl font-mondayRush">CUTTING:</h2>
+          <p><a href="https://www.akpress.org/shameless-feminists.html" target="_blank"><u>https://www.akpress.org/shameless-feminists.html</u></a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
