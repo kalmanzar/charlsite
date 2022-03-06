@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-1 w-full h-full">
+  <div class="flex flex-1 w-full h-full justify-center">
     <div v-if="!visible" class="lightboxGrid">
       <a class="pinkSelect" href="#" @click.prevent="show(i)" v-for="(image, i) in images" :key="image">
         <img class="imageGalleryItem" :src="image" />
