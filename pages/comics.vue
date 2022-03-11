@@ -1,38 +1,38 @@
 <template>
   <div class="w-full">
     <div>
-      <h1 class="pt-4 font-mondayRush text-2xl">CORNSPIKE</h1>
-      <p class="pb-4 font-sans italic">2022, ink, watercolor, and Procreate</p>
+      <h1 class="artTitle pt-4">CORNSPIKE</h1>
+      <p class="artBlurb italic">2022, ink, watercolor, and Procreate</p>
       <Lightbox class="pb-4" :images="cornspikeImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">NEST</h1>
-      <p class="pb-4 font-sans italic">2021, ink, watercolor, and Procreate</p>
+      <h1 class="artTitle pt-4">NEST</h1>
+      <p class="artBlurb italic">2021, ink, watercolor, and Procreate</p>
       <Lightbox class="pb-4" :images="nestImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">SEGMENTS</h1>
-      <p class="pb-4 font-sans italic">2021, pencil, ink, and watercolor</p>
+      <h1 class="artTitle pt-4">SEGMENTS</h1>
+      <p class="artBlurb italic">2021, pencil, ink, and watercolor</p>
       <Lightbox class="pb-4" :images="segmentsImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">FAMILY BUSINESS</h1>
-      <p class="pb-4 font-sans italic">2020, pencil and ink</p>
+      <h1 class="artTitle pt-4">FAMILY BUSINESS</h1>
+      <p class="artBlurb italic">2020, pencil and ink</p>
       <Lightbox class="pb-4" :images="familyImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">IZUMI</h1>
-      <p class="pb-4 font-sans italic">2020, pencil and ink</p>
+      <h1 class="artTitle pt-4">IZUMI</h1>
+      <p class="artBlurb italic">2020, pencil and ink</p>
       <Lightbox class="pb-4" :images="izumiImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">BEAR</h1>
-      <p class="pb-4 font-sans italic">2020, pencil, ink, and watercolor</p>
+      <h1 class="artTitle pt-4">BEAR</h1>
+      <p class="artBlurb italic">2020, pencil, ink, and watercolor</p>
       <Lightbox class="pb-4" :images="bearImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">BLUEPRINTS</h1>
-      <p class="pb-4 font-sans italic">2020, Adobe Illustrator</p>
+      <h1 class="artTitle pt-4">BLUEPRINTS</h1>
+      <p class="artBlurb italic">2020, Adobe Illustrator</p>
       <Lightbox class="pb-4" :images="blueprintsImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">BODIES</h1>
-      <p class="pb-4 font-sans italic">2019, pencil and ink</p>
+      <h1 class="artTitle pt-4">BODIES</h1>
+      <p class="artBlurb italic">2019, pencil and ink</p>
       <Lightbox class="pb-4" :images="bodiesImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">RUTA</h1>
-      <p class="pb-4 font-sans italic">2019, pencil and ink</p>
+      <h1 class="artTitle pt-4">RUTA</h1>
+      <p class="artBlurb italic">2019, pencil and ink</p>
       <Lightbox class="pb-4" :images="rutaImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">CUTTING</h1>
-      <p class="pb-4 font-sans italic">2018, pencil, ink, wash, and screentone</p>
+      <h1 class="artTitle pt-4">CUTTING</h1>
+      <p class="artBlurb italic">2018, pencil, ink, wash, and screentone</p>
       <Lightbox class="pb-4" :images="cuttingImages" />
-      <h1 class="pt-4 font-mondayRush text-2xl">PUBES</h1>
-      <p class="pb-4 font-sans italic">2018, pencil, ink, and wash</p>
+      <h1 class="artTitle pt-4">PUBES</h1>
+      <p class="artBlurb italic">2018, pencil, ink, and wash</p>
       <Lightbox class="pb-2" :images="pubesImages" />
     </div>
   </div>
@@ -58,11 +58,11 @@ export default {
     },
     nestImages() {
       return [
-        require('~/assets/images/comics/nest/nest_Cover-Full.webp'),
-        require('~/assets/images/comics/nest/nest_1-Full.webp'),
-        require('~/assets/images/comics/nest/nest_2-Full.webp'),
-        require('~/assets/images/comics/nest/nest_3-Full.webp'),
-        require('~/assets/images/comics/nest/nest_4-Full.webp'),
+        require('~/assets/images/comics/nest/nest_gray_1-Full.webp'),
+        require('~/assets/images/comics/nest/nest_gray_2-Full.webp'),
+        require('~/assets/images/comics/nest/nest_gray_3-Full.webp'),
+        require('~/assets/images/comics/nest/nest_gray_4-Full.webp'),
+        require('~/assets/images/comics/nest/nest_gray_5-Full.webp'),
       ]
     },
     segmentsImages() {

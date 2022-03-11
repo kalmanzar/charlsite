@@ -1,19 +1,19 @@
 <template>
   <div class="w-full">
     <div>
-      <h1 class="py-4 font-mondayRush text-2xl">HOGLET</h1>
+      <h1 class="artTitle py-4">HOGLET</h1>
       <Lightbox class="pb-4" :images="hogletImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">MATE</h1>
+      <h1 class="artTitle py-4">MATE</h1>
       <Lightbox class="pb-4" :images="mateImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">BAUGHMAN CENTER</h1>
+      <h1 class="artTitle py-4">BAUGHMAN CENTER</h1>
       <Lightbox class="pb-4" :images="baughmanImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">JACK AT THE HOUSE</h1>
+      <h1 class="artTitle py-4">JACK AT THE HOUSE</h1>
       <Lightbox class="pb-4" :images="jackImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">RICK</h1>
+      <h1 class="artTitle py-4">RICK</h1>
       <Lightbox class="pb-4" :images="rickImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">ROBIN</h1>
+      <h1 class="artTitle py-4">ROBIN</h1>
       <Lightbox class="pb-2" :images="robinImages" />
-      <h1 class="py-4 font-mondayRush text-2xl">FIGURE DRAWINGS AND GENERAL STUDIES</h1>
+      <h1 class="artTitle py-4">FIGURE DRAWINGS AND GENERAL STUDIES</h1>
       <Lightbox class="pb-2" :images="figureImages" />
     </div>
   </div>
@@ -86,8 +86,8 @@ export default {
         require('~/assets/images/traditional/figures/figure_15-Full.webp'),
         require('~/assets/images/traditional/figures/figure_16-Full.webp'),
         require('~/assets/images/traditional/figures/figure_17-Full.webp'),
-        // require('~/assets/images/traditional/figures/figure_18-Full.webp'),
         require('~/assets/images/traditional/figures/figure_19-Full.webp'),
+        require('~/assets/images/traditional/figures/figure_20-Full.webp'),
       ]
     },
   }

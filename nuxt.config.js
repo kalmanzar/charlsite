@@ -40,6 +40,7 @@ export default {
           },
           fontFamily: {
             mondayRush: ['MondayRush'],
+            centuryGothic: ['CenturyGothic'],
             sans: ['Helvetica', 'Arial', 'sans-serif'],
           },
           screens: {
