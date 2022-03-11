@@ -214,6 +214,13 @@ u::-moz-selection {
   }
 }
 
+.tabListItem {
+  @apply text-xl text-center font-mondayRush;
+  @media (min-width: theme('screens.sm')) {
+    @apply text-2xl;
+  }
+}
+
 .imageLinkList {
   @apply h-full justify-around;
   @media (min-width: theme('screens.xxxxs')) {
@@ -386,15 +393,24 @@ u::-moz-selection {
 }
 
 .aboutHeading1 {
-  @apply text-3xl font-mondayRush;
+  @apply text-2xl font-mondayRush;
+  @media (min-width: theme('screens.sm')) {
+    @apply text-3xl;
+  }
 }
 
 .aboutHeading2 {
   @apply text-xl font-mondayRush;
+  @media (min-width: theme('screens.sm')) {
+    @apply text-2xl;
+  }
 }
 
 .artTitle {
   @apply text-2xl font-mondayRush;
+  @media (min-width: theme('screens.sm')) {
+    @apply text-3xl;
+  }
 }
 
 .artBlurb {

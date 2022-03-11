@@ -17,7 +17,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/faviconInitialsFull.ico' },
-      { rel: 'preload', as: 'font', type: 'font/otf', href: '/MondayRush-Regular.otf', crossorigin: true }
+      { rel: 'preload', as: 'font', type: 'font/otf', href: '/MondayRush-Regular.otf', crossorigin: true },
+      { rel: 'preload', as: 'font', type: 'font/otf', href: '/CenturyGothic.otf', crossorigin: true }
     ]
   },
 
