@@ -5,14 +5,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'charl',
+    title: 'Carly Shooster Comics',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Carly Shooster Comics and Illustrations' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -98,7 +98,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://charlyshoo.com',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -364,10 +364,10 @@ u::-moz-selection {
     @apply aspect-w-1 aspect-h-1;
   }
   @media (min-width: theme('screens.xl')) {
-    @apply w-80 h-80;
+    @apply w-56 h-56;
   }
   @media (min-width: theme('screens.2xl')) {
-    @apply w-112 h-112;
+    @apply w-56 h-56;
   }
 }
 
@@ -379,16 +379,16 @@ u::-moz-selection {
 }
 
 .aboutLeft {
-  @apply flex flex-col pt-4;
+  @apply flex flex-col pt-4 break-words;
   @media (min-width: theme('screens.lg')) {
-    @apply w-160 justify-evenly pt-10;
+    @apply w-1/2 pt-10;
   }
 }
 
 .aboutRight {
   @apply flex flex-col break-words;
   @media (min-width: theme('screens.lg')) {
-    @apply justify-around pl-8;
+    @apply pl-8;
   }
 }
 

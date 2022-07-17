@@ -1,6 +1,12 @@
 <template>
   <div class="w-full">
     <div>
+      <h1 class="artTitle pt-4">UNFAMILIAR CEILING</h1>
+      <p class="artBlurb italic">2022, ink, watercolor, and Photoshop</p>
+      <Lightbox class="pb-4" :images="unfamiliarImages" />
+      <h1 class="artTitle pt-4">INTRODUCING THE RUBINS</h1>
+      <p class="artBlurb italic">2022, ink, watercolor, and Procreate</p>
+      <Lightbox class="pb-4" :images="rubinsImages" />
       <h1 class="artTitle pt-4">CORNSPIKE</h1>
       <p class="artBlurb italic">2022, ink, watercolor, and Procreate</p>
       <Lightbox class="pb-4" :images="cornspikeImages" />
@@ -47,6 +53,24 @@ export default {
     Lightbox,
   },
   computed: {
+    unfamiliarImages() {
+      return [
+        require('~/assets/images/comics/unfamiliar/SinceWhenExtract6-Full.webp'),
+        require('~/assets/images/comics/unfamiliar/SinceWhenExtract7-Full.webp'),
+        require('~/assets/images/comics/unfamiliar/SinceWhenExtract8-Full.webp'),
+        require('~/assets/images/comics/unfamiliar/SinceWhenExtract9-Full.webp'),
+        require('~/assets/images/comics/unfamiliar/SinceWhenExtract10-Full.webp'),
+      ]
+    },
+    rubinsImages() {
+      return [
+        require('~/assets/images/comics/rubins/RUBINS_1-Full.webp'),
+        require('~/assets/images/comics/rubins/RUBINS_2-Full.webp'),
+        require('~/assets/images/comics/rubins/RUBINS_3-Full.webp'),
+        require('~/assets/images/comics/rubins/RUBINS_4-Full.webp'),
+        require('~/assets/images/comics/rubins/RUBINS_5-Full.webp'),
+      ]
+    },
     cornspikeImages() {
       return [
         require('~/assets/images/comics/cornspike/cornspike_1-Full.webp'),
