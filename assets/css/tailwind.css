@@ -327,7 +327,7 @@ u::-moz-selection {
 }
 
 .imageGalleryItem {
-  @apply object-fill w-full h-full rounded-3xl;
+  @apply w-full h-full rounded-3xl;
 }
 
 .lightbox {
