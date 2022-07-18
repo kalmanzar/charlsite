@@ -326,12 +326,8 @@ u::-moz-selection {
   }
 }
 
-.imageGalleryItem {
-  @apply object-fill w-full h-full rounded-3xl;
-}
-
 .lightbox {
-  @apply top-0 left-0 w-screen h-screen z-50 fixed justify-center;
+  @apply w-screen h-screen z-50 fixed;
 }
 
 .pdfBtn {

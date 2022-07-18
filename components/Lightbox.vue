@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-1 w-full h-full justify-center">
     <div v-if="!visible" class="lightboxGrid">
-      <a class="pinkSelect" href="#" @click.prevent="show(i)" v-for="(image, i) in images" :key="image">
-        <img class="imageGalleryItem lg:object-scale-down" :src="image" />
+      <a class="pinkSelect" href="#" @click.stop.prevent="show(i)" v-for="(image, i) in images" :key="image">
+        <img class="rounded-3xl object-scale-down" :src="image" />
       </a>
       <a class="relative" v-for="(iframe, j) in iframes" :key="j">
-        <iframe v-if="iframes" class="imageGalleryItem z-10" :width="iframe.width" :height="iframe.height" :src="iframe.src" :title="iframe.title" :frameborder="iframe.frameborder" :allow="iframe.allow"></iframe>
+        <iframe v-if="iframes" class="rounded-3xl z-10" :width="iframe.width" :height="iframe.height" :src="iframe.src" :title="iframe.title" :frameborder="iframe.frameborder" :allow="iframe.allow"></iframe>
       </a>
     </div>
-    <div class="flex lightbox" v-if="visible" @click="hide">
+    <div class="flex lightbox inset-0 justify-center" v-show="visible" @click.prevent="hide">
       <div class="flex flex-row">
         <div class="flex cursor-pointer pinkSelect h-64 xxxs:h-80 md:h-88 place-self-center" @click.stop="prev" :class="{'invisible': ! hasPrev()}">
           <svg class="self-center pointer-events-none" fill="#fff" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/><path d="M0-.5h24v24H0z" fill="none"/>
@@ -107,7 +107,8 @@ export default {
 }
 .lightboxGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  grid-auto-rows: auto;
   grid-gap: 16px;
 }
 a {
@@ -118,7 +119,7 @@ a {
   /* Two columns */
   .lightboxGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
     grid-gap: 16px;
   }
   a {
@@ -134,7 +135,7 @@ a {
   /* Three columns */
   .lightboxGrid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(120px, 1fr));
     grid-gap: 16px;
   }
   a {
