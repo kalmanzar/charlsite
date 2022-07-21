@@ -2,7 +2,7 @@
   <div class="flex flex-1 w-full h-full justify-center">
     <div v-if="!visible" class="lightboxGrid">
       <a class="pinkSelect" href="#" @click.stop.prevent="show(i)" v-for="(image, i) in images" :key="image">
-        <img class="rounded-3xl object-scale-down" :src="image" />
+        <img class="rounded-3xl object-scale-down h-full" :src="image" />
       </a>
       <a class="relative" v-for="(iframe, j) in iframes" :key="j">
         <iframe v-if="iframes" class="rounded-3xl z-10" :width="iframe.width" :height="iframe.height" :src="iframe.src" :title="iframe.title" :frameborder="iframe.frameborder" :allow="iframe.allow"></iframe>

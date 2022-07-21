@@ -1,10 +1,16 @@
 <template>
   <div class="w-full">
     <div>
+      <h1 class="artTitle py-4">BLUE SUMMER</h1>
+      <Lightbox class="pb-4" :images="summerImages" />
       <h1 class="artTitle py-4">WHEN YOUR PRIVATE JET CRASHES</h1>
       <Lightbox class="pb-4" :images="planeImages" :iframes="planeIframes" />
       <h1 class="artTitle py-4">CHARACTER STUDIES</h1>
       <Lightbox class="pb-4" :images="characterImages" />
+      <h1 class="artTitle pt-4">PENCILS</h1>
+      <p><em>2022, story art</em></p>
+      <p class="pb-4">Mamita, Chapter 6: Unfamiliar Ceiling</p>
+      <Lightbox class="pb-4" :images="pencilImages" />
       <h1 class="artTitle py-4">STORYBOARDS</h1>
       <Lightbox class="pb-2" :images="storyBoardImages" />
     </div>
@@ -20,6 +26,25 @@ export default {
     Lightbox,
   },
   computed: {
+    summerImages() {
+      return [
+        require('~/assets/images/story/blueSummer/eyes_Gif.gif'),
+        require('~/assets/images/story/blueSummer/profile_Gif.gif'),
+        require('~/assets/images/story/blueSummer/walk_Gif.gif'),
+        require('~/assets/images/story/blueSummer/eyes_1-Full.webp'),
+        require('~/assets/images/story/blueSummer/profile_2-Full.webp'),
+        require('~/assets/images/story/blueSummer/walk_11-Full.webp'),
+      ]
+    },
+    pencilImages() {
+      return [
+        require('~/assets/images/story/pencil/pencil1-Full.webp'),
+        require('~/assets/images/story/pencil/pencil2-Full.webp'),
+        require('~/assets/images/story/pencil/pencil3-Full.webp'),
+        require('~/assets/images/story/pencil/pencil4-Full.webp'),
+        require('~/assets/images/story/pencil/pencil5-Full.webp'),
+      ]
+    },
     planeImages() {
       return [
         require('~/assets/images/story/planeCrash/jackGif.gif'),
