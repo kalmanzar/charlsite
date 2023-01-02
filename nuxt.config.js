@@ -37,7 +37,8 @@ export default {
             'imageLink': '4rem',
           },
           colors: {
-            'off-white': '#e6e0c8'
+            'off-white': '#e6e0c8',
+            'customStone': '#E7E5E4'
           },
           fontFamily: {
             mondayRush: ['MondayRush'],
@@ -67,9 +68,6 @@ export default {
           width: {
             '15/24': '62.5%',
           },
-          backgroundImage: theme => ({
-            'wallpupper': "url('~/assets/images/wallpupper.webp')",
-          })
         }
       },
       plugins: [
