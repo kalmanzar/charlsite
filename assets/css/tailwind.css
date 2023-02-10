@@ -290,7 +290,6 @@ u::-moz-selection {
 .imageLinkTransitionItem {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  margin-left: 19px;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: all .5s ease;
