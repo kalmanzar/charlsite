@@ -3,6 +3,7 @@
     <div v-if="!visible" class="lightboxGrid">
       <a class="pinkSelect place-content-center justify-center" href="#" @click.stop.prevent="show(i)" v-for="(image, i) in images" :key="image">
         <img class="rounded-3xl object-scale-down self-center place-self-center" :src="image" />
+        <p v-if="subtitles">{{subtitles[i]}}</p>
       </a>
       <a class="relative" v-for="(iframe, j) in iframes" :key="j">
         <iframe v-if="iframes" class="rounded-3xl z-10" :width="iframe.width" :height="iframe.height" :src="iframe.src" :title="iframe.title" :frameborder="iframe.frameborder" :allow="iframe.allow"></iframe>
@@ -39,6 +40,10 @@ export default {
       type: Array,
       required: false
     },
+    subtitles: {
+      type: Array,
+      required: false
+    }
   },
   data() {
     return {

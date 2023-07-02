@@ -1,6 +1,16 @@
 <template>
   <div class="w-full">
     <div>
+      <h1 class="artTitle pt-4">MANATEE</h1>
+      <p class="artBlurb italic">2022, Adobe Fresco</p>
+      <Lightbox class="pb-4" :images="manateeImages" />
+      <h1 class="artTitle pt-4">THE SUMMER I LOST MY MOJO IN SAN FRANCISCO</h1>
+      <p class="artBlurb italic">2022, Adobe Fresco</p>
+      <p class="artBlurb italic"><a href="https://comics.cca.edu/digital/22shooster/">Click here to read the whole thing!</a></p>
+      <Lightbox class="pb-4" :images="sfImages" />
+      <h1 class="artTitle pt-4">UNTITLED</h1>
+      <p class="artBlurb italic">2022, Adobe Fresco</p>
+      <Lightbox class="pb-4" :images="untitledImages" />
       <h1 class="artTitle pt-4">UNFAMILIAR CEILING</h1>
       <p class="artBlurb italic">2022, ink, watercolor, and Photoshop</p>
       <Lightbox class="pb-4" :images="unfamiliarImages" />
@@ -53,6 +63,31 @@ export default {
     Lightbox,
   },
   computed: {
+    manateeImages() {
+      return [
+        require('~/assets/images/comics/manatee/manatee_1-Full.webp'),
+        require('~/assets/images/comics/manatee/manatee_2-Full.webp'),
+        require('~/assets/images/comics/manatee/manatee_3-Full.webp'),
+        require('~/assets/images/comics/manatee/manatee_4-Full.webp'),
+        require('~/assets/images/comics/manatee/manatee_5-Full.webp'),
+      ]
+    },
+    sfImages() {
+      return [
+        require('~/assets/images/comics/mojo/SF1-Full.webp'),
+        require('~/assets/images/comics/mojo/SF2-Full.webp'),
+        require('~/assets/images/comics/mojo/SF3-Full.webp'),
+      ]
+    },
+    untitledImages() {
+      return [
+        require('~/assets/images/comics/untitled/untitled_6-Full.webp'),
+        require('~/assets/images/comics/untitled/untitled_7-Full.webp'),
+        require('~/assets/images/comics/untitled/untitled_8-Full.webp'),
+        require('~/assets/images/comics/untitled/untitled_9-Full.webp'),
+        require('~/assets/images/comics/untitled/untitled_10-Full.webp'),
+      ]
+    },
     unfamiliarImages() {
       return [
         require('~/assets/images/comics/unfamiliar/SinceWhenExtract6-Full.webp'),

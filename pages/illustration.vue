@@ -1,6 +1,9 @@
 <template>
   <div class="w-full">
     <div class="font-centuryGothic">
+      <h1 class="artTitle pt-4">CHAPTER ILLUSTRATIONS</h1>
+      <p class="pb-4"><em>2023, for a book on theology by Rabbi Michael Gold</em></p>
+      <Lightbox class="pb-4" :images="rabbiImages" :subtitles="rabbiSubtitles"/>
       <h1 class="artTitle pt-4">KAISEN YOGA</h1>
       <p><em>2022, logo and website images</em></p>
       <p class="pb-4">See them <a href="https://www.kaisenyoga.com/" target="_blank"><u>here</u></a></p>
@@ -62,6 +65,34 @@ export default {
     Lightbox,
   },
   computed: {
+    rabbiSubtitles() {
+      return [
+        'Bat',
+        'Beetle in a Box',
+        'Breath of God',
+        'Chinese Room Experiment',
+        'Ghost in the Machine',
+        'Great Chain of Being',
+        'Mary\'s Room',
+        'Philosophical Zombie',
+        'Sparks',
+        'Trapped in a Cave',
+      ]
+    },
+    rabbiImages() {
+      return [
+        require('~/assets/images/digital/rabbi/Bat-Full.webp'),
+        require('~/assets/images/digital/rabbi/Beetleinabox-Full.webp'),
+        require('~/assets/images/digital/rabbi/BreathofGod-Full.webp'),
+        require('~/assets/images/digital/rabbi/Chineseroomexperiment-Full.webp'),
+        require('~/assets/images/digital/rabbi/Ghostinthemachine-Full.webp'),
+        require('~/assets/images/digital/rabbi/Greatchainofbeing-Full.webp'),
+        require('~/assets/images/digital/rabbi/Mill-Full.webp'),
+        require('~/assets/images/digital/rabbi/Philosophicalzombie-Full.webp'),
+        require('~/assets/images/digital/rabbi/Sparks-Full.webp'),
+        require('~/assets/images/digital/rabbi/Trappedinacave-Full.webp'),
+      ]
+    },
     kaisenImages() {
       return [
         require('~/assets/images/digital/kaisen/meditation-Full.webp'),
