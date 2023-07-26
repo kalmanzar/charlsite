@@ -300,6 +300,27 @@ u::-moz-selection {
   filter: grayscale(0%);
 }
 
+@media (pointer: coarse) {
+  @keyframes bwToColor {
+    0% {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+    50% {
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    }
+    100% {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+  }
+
+  .imageLinkTransitionItem {
+    animation: 6s ease 1s 3 normal none running bwToColor;
+  }
+}
+
 .titleCardItem {
   @apply object-fill w-full h-full;
 }
