@@ -17,10 +17,10 @@
 }
 
 @font-face {
-  font-family: 'MondayRush';
-  font-weight: 400;
+  font-family: 'NeckPain';
+  font-weight: 900;
   font-display: swap;
-  src: url('/MondayRush-Regular.otf') format('opentype');
+  src: url('/NeckPain-Regular.otf') format('opentype');
 }
 
 @font-face {
@@ -215,7 +215,7 @@ u::-moz-selection {
 }
 
 .tabListItem {
-  @apply text-xl text-center font-mondayRush;
+  @apply text-xl text-center font-neckPain;
   @media (min-width: theme('screens.sm')) {
     @apply text-2xl;
   }
@@ -317,7 +317,7 @@ u::-moz-selection {
   }
 
   .imageLinkTransitionItem {
-    animation: 6s ease 1s 3 normal none running bwToColor;
+    animation: 6s ease 1s infinite normal none running bwToColor;
   }
 }
 
@@ -365,7 +365,7 @@ u::-moz-selection {
 }
 
 .pdfBtn {
-  @apply bg-black font-mondayRush self-center cursor-pointer text-center text-white rounded-3xl mt-2 w-24 h-8 pt-1 text-xl;
+  @apply bg-black font-neckPain self-center cursor-pointer text-center text-white rounded-3xl mt-2 w-24 h-8 pt-1 text-xl;
   @media (min-width: theme('screens.xs')) {
     @apply pt-2 w-28 h-10;
   }
@@ -422,21 +422,21 @@ u::-moz-selection {
 }
 
 .aboutHeading1 {
-  @apply text-2xl font-mondayRush;
+  @apply text-2xl font-neckPain;
   @media (min-width: theme('screens.sm')) {
     @apply text-3xl;
   }
 }
 
 .aboutHeading2 {
-  @apply text-xl font-mondayRush;
+  @apply text-xl font-neckPain;
   @media (min-width: theme('screens.sm')) {
     @apply text-2xl;
   }
 }
 
 .artTitle {
-  @apply text-2xl font-mondayRush;
+  @apply text-2xl font-neckPain;
   @media (min-width: theme('screens.sm')) {
     @apply text-3xl;
   }

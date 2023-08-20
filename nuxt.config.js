@@ -17,7 +17,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/faviconInitialsFull.ico' },
-      { rel: 'preload', as: 'font', type: 'font/otf', href: '/MondayRush-Regular.otf', crossorigin: true },
+      { rel: 'preload', as: 'font', type: 'font/otf', href: '/NeckPain-Regular.otf', crossorigin: true },
       { rel: 'preload', as: 'font', type: 'font/otf', href: '/CenturyGothic.otf', crossorigin: true }
     ]
   },
@@ -41,7 +41,7 @@ export default {
             'customStone': '#E7E5E4'
           },
           fontFamily: {
-            mondayRush: ['MondayRush'],
+            neckPain: ['NeckPain'],
             centuryGothic: ['CenturyGothic'],
             sans: ['Helvetica', 'Arial', 'sans-serif'],
           },

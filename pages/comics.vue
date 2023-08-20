@@ -1,6 +1,15 @@
 <template>
   <div class="w-full">
     <div>
+      <h1 class="artTitle pt-4">BUILDING BOUNDARIES</h1>
+      <p class="artBlurb italic">2023, ink, watercolor, and Adobe Fresco</p>
+      <Lightbox class="pb-4" :images="boundariesImages" />
+      <h1 class="artTitle pt-4">PEACH PIT EXIT</h1>
+      <p class="artBlurb italic">2023, ink, watercolor, Procreate, and Adobe Fresco</p>
+      <Lightbox c lass="pb-4" :images="peachImages" />
+      <h1 class="artTitle pt-4">CESAR RETURNS</h1>
+      <p class="artBlurb italic">2023, ink, watercolor, Procreate, and Adobe Fresco</p>
+      <Lightbox class="pb-4" :images="cesarImages" />
       <h1 class="artTitle pt-4">MANATEE</h1>
       <p class="artBlurb italic">2022, Adobe Fresco</p>
       <Lightbox class="pb-4" :images="manateeImages" />
@@ -63,6 +72,33 @@ export default {
     Lightbox,
   },
   computed: {
+    boundariesImages() {
+      return [
+        require('~/assets/images/comics/boundaries/boundaries_2-Full.webp'),
+        require('~/assets/images/comics/boundaries/boundaries_3-Full.webp'),
+        require('~/assets/images/comics/boundaries/boundaries_4-Full.webp'),
+        require('~/assets/images/comics/boundaries/boundaries_5-Full.webp'),
+        require('~/assets/images/comics/boundaries/boundaries_6-Full.webp'),
+      ]
+    },
+    peachImages() {
+      return [
+        require('~/assets/images/comics/peach/peach_1-Full.webp'),
+        require('~/assets/images/comics/peach/peach_2-Full.webp'),
+        require('~/assets/images/comics/peach/peach_3-Full.webp'),
+        require('~/assets/images/comics/peach/peach_4-Full.webp'),
+        require('~/assets/images/comics/peach/peach_5-Full.webp'),
+      ]
+    },
+    cesarImages() {
+      return [
+        require('~/assets/images/comics/cesar/cesar_1-Full.webp'),
+        require('~/assets/images/comics/cesar/cesar_2-Full.webp'),
+        require('~/assets/images/comics/cesar/cesar_3-Full.webp'),
+        require('~/assets/images/comics/cesar/cesar_4-Full.webp'),
+        require('~/assets/images/comics/cesar/cesar_5-Full.webp'),
+      ]
+    },
     manateeImages() {
       return [
         require('~/assets/images/comics/manatee/manatee_1-Full.webp'),
