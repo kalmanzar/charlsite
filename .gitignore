@@ -103,3 +103,7 @@ assets/images/*.webp
 
 # Local Netlify folder
 .netlify
+
+# Migration WIP
+_nuxt2
+_nuxt3
