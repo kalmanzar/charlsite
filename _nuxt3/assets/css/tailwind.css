@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@font-face {
+  font-family: 'NeckPain';
+  font-weight: 900;
+  font-display: swap;
+  src: url('/NeckPain-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CenturyGothic';
+  font-weight: 400;
+  font-display: swap;
+  src: url('/CenturyGothic.otf') format('opentype');
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: thin dotted !important;
+}
+
+.pinkSelect {
+  -webkit-tap-highlight-color: rgb(249 168 212);
+}
+
+a::selection {
+  background: rgb(249 168 212);
+}
+a::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+div::selection {
+  background: rgb(249 168 212);
+}
+div::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+em::selection {
+  background: rgb(249 168 212);
+}
+em::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+h1::selection {
+  background: rgb(249 168 212);
+}
+h1::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+h2::selection {
+  background: rgb(249 168 212);
+}
+h2::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+iframe::selection {
+  background: rgb(249 168 212);
+}
+iframe::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+img::selection {
+  background: rgb(249 168 212);
+}
+img::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+p::selection {
+  background: rgb(249 168 212);
+}
+p::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+svg::selection {
+  background: rgb(249 168 212);
+}
+svg::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+u::selection {
+  background: rgb(249 168 212);
+}
+u::-moz-selection {
+  background: rgb(249 168 212);
+}
+
+.siteBackground {
+  @apply bg-customStone bg-cover overflow-y-auto no-scrollbar w-screen h-screen justify-center items-center;
+}
+
+.wrapper {
+  @apply h-full w-11/12 py-4 px-4;
+  /* @media (min-width: theme('screens.xxxxs')) {
+    @apply w-11/12;
+  }
+  @media (min-width: theme('screens.xxxs')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.xxs')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.xs')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.sm')) {
+    @apply w-10/12;
+  }
+  @media (min-width: theme('screens.md')) {
+    @apply w-9/12;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply w-9/12;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply w-8/12;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply w-8/12;
+  } */
+}
+
+.card {
+  @apply px-7 py-4 bg-white bg-center bg-contain text-center justify-start h-full no-scrollbar overflow-y-auto rounded-3xl shadow-2xl;
+}
+
+.tabList {
+  @apply py-2 sm:py-4 list-none space-x-2 text-xl sm:text-2xl text-black border-b-2 border-customStone;
+}
+
+.tabListItem {
+  @apply text-xl sm:text-2xl text-center font-neckPain;
+}
+
+.imageLinkList {
+  @apply h-full justify-around xxxs:justify-start xs:justify-around;
+}
+
+.imageLink {
+  @apply self-center aspect-w-7 xs:aspect-w-8 sm:aspect-w-7 xl:aspect-w-10 aspect-h-3 xs:aspect-h-2 sm:aspect-h-3 xl:aspect-h-2 w-11/12 xs:w-10/12 sm:w-9/12 mt-4 xxs:mt-6;
+}
+
+.imageLinkItem {
+  @apply object-fill w-full h-full rounded-imageLink;
+}
+
+.imageLinkTransitionItem {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all .5s ease;
+}
+
+.imageLinkTransitionContainer:hover .imageLinkTransitionItem {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+@media (pointer: coarse) {
+  @keyframes bwToColor {
+    0% {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+    50% {
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    }
+    100% {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+  }
+
+  .imageLinkTransitionItem {
+    animation: 6s ease 1s infinite normal none running bwToColor;
+  }
+}
+
+.titleCardItem {
+  @apply object-fill w-full h-full;
+}
+
+.socialLinksList {
+  @apply flex justify-center mt-5 pt-2 space-x-1 border-t-2 border-customStone;
+}
+
+.comicsGalleryList {
+  @apply gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.lightbox {
+  @apply w-screen h-screen z-50 fixed;
+}
+
+.pdfBtn {
+  @apply pt-1 xs:pt-2 md:pt-1.5 w-24 xs:w-28 md:w-32 xl:w-40 h-8 xs:h-10 text-xl md:text-2xl xl:text-3xl bg-black font-neckPain self-center cursor-pointer text-center text-white rounded-3xl mt-2;
+}
+.pdfBtn:hover {
+  background-color: rgb(110, 80, 108);
+}
+
+.pdfImg {
+  @apply object-fill w-full h-full flex-1 pt-4 pb-2;
+}
+
+.aboutImgWrapper {
+  @apply self-center w-48 h-48 xs:w-56 xs:h-56 lg:aspect-w-1 lg:aspect-h-1;
+  /* @media (min-width: theme('screens.xs')) {
+    @apply w-56 h-56;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply aspect-w-1 aspect-h-1;
+  }
+  @media (min-width: theme('screens.xl')) {
+    @apply w-56 h-56;
+  }
+  @media (min-width: theme('screens.2xl')) {
+    @apply w-56 h-56;
+  } */
+}
+
+.aboutImg {
+  @apply object-fill rounded-imageLink lg:w-full lg:h-full;
+}
+
+.aboutLeft {
+  @apply flex flex-col break-words pt-4 lg:pt-10 lg:w-1/2;
+}
+
+.aboutRight {
+  @apply flex flex-col break-words lg:pl-8;
+}
+
+.aboutHeading1 {
+  @apply text-2xl sm:text-3xl font-neckPain;
+}
+
+.aboutHeading2 {
+  @apply text-xl sm:text-2xl font-neckPain;
+}
+
+.artTitle {
+  @apply text-2xl sm:text-3xl font-neckPain;
+}
+
+.artBlurb {
+  @apply font-centuryGothic pb-4;
+}
+
+/*
+xxxxs 283px	@media (min-width: 283px) { ... }
+xxxs  374px	@media (min-width: 374px) { ... }
+xxs   389px	@media (min-width: 389px) { ... }
+xs    475px	@media (min-width: 475px) { ... }
+sm	  640px	@media (min-width: 640px) { ... }
+md	  768px	@media (min-width: 768px) { ... }
+lg	 1024px	@media (min-width: 1024px) { ... }
+xl	 1280px	@media (min-width: 1280px) { ... }
+2xl	 1536px	@media (min-width: 1536px) { ... }
+*/

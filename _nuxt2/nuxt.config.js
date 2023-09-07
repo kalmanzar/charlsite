@@ -86,6 +86,10 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  
+  // dir: {
+  //   public: 'static'
+  // },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -97,11 +101,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    // '@nuxtjs/tailwindcss',
+    // '@nuxt/typescript-build',
   ],
 
   sitemap: {
-    hostname: 'https://charlyshoo.com',
+    hostname: 'https://carlyshoo.com',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
