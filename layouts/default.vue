@@ -7,8 +7,8 @@
           <li class="flex-auto tabListItem"><nuxt-link to="/comics" class="noSelect">COMICS</nuxt-link></li>
           <li class="flex-auto tabListItem"><nuxt-link to="/illustration" class="noSelect">ILLUSTRATION</nuxt-link></li>
           <li class="flex-auto tabListItem"><nuxt-link to="/story" class="noSelect">STORY</nuxt-link></li>
-          <li class="flex-auto tabListItem"><nuxt-link to="/resume" class="noSelect">RESUME</nuxt-link></li>
           <li class="flex-auto tabListItem"><nuxt-link to="/about" class="noSelect">ABOUT</nuxt-link></li>
+          <li class="flex-auto tabListItem"><nuxt-link to="/resume" class="noSelect">RESUME</nuxt-link></li>
         </ul>
         <div class="flex flex-1">
           <Nuxt />
