@@ -22,11 +22,7 @@ export default {
     ],
     script: [
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-Z9NXNHJYKN",
-        async: true,
-      },
-      {
-        src: "js/ga.js",
+        src: "js/gtm.js",
       }
   ]
   },
